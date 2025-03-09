@@ -102,22 +102,22 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                I am deeply interested in the intersection of deep learning, systems, and formal methods/programming languages. My research goal is to develop principled techniques that enhance the effectiveness, scalability, and reliability of AI systems, particularly in software development and safety-critical domains.
+                My research is at the intersection of deep learning, formal methods, and programming languages. I am largely interested in improving the capabilities of AI systems in challenging, real-world coding, math, and logical reasoning tasks. 
               </p>
               <p>
                 I'm currently researching:
               </p>
               <p>
-                - Language Models for Program Synthesis, Math, Logic, and Reasoning Tasks
+                - Deep Learning for Program Synthesis and Code Semantics Understanding
               </p>
               <p>
-                - Embedding Models, Re-Ranking, and Retrieval-Augmented Generation
+                - Tool Use with Language Models and Language Model-driven Software Engineering
               </p>
               <p>
-                - Inference-time Scaling of LLMs
+                - LLM Post-Training (Preference and Reinforcement Finetuning) and Inference (Decoding, Reasoning, Search, Planning) Algorithms For Code
               </p>
               <p>
-                - Formal Verification and Robustness of Deep Neural Networks 
+                - AI for Formal Methods and Formal Methods for AI
               </p>
             </td>
           </tr>
@@ -137,12 +137,37 @@
           <tr>
             <td width="25%">
               <div class="one">
+                  <a href="images/crane.png" target="_blank"><img style="width:100%;max-width:100%" src='images/crane.png'></a>
+              </div>
+              
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/2502.09061" target="_blank">
+                  <papertitle>CRANE: Reasoning with Constrained LLM Generation</papertitle>
+              </a>
+              <br>
+              <a href="https://debangshu-banerjee.github.io/" target="_blank">Debangshu Banerjee*</a>,
+              <strong>Tarun Suresh*</strong>,  
+              <a href="https://shubhamugare.github.io/" target="_blank">Shubham Ugare</a>,
+              <a href="https://misailo.cs.illinois.edu/" target="_blank">Sasa Misailovic</a>,
+              <a href="https://ggndpsngh.github.io/" target="_blank">Gagandeep Singh</a>
+              <br>
+              <em>VerifAI @ ICLR 2025</em>
+              <br>
+              [<a href="https://arxiv.org/abs/2502.09061" target="_blank">Paper</a>]
+              <br>
+              <p>We show theoretically that constraining LLM generation to a fixed output grammar can reduce reasoning capabilities and by augmenting the grammar with additional production rules for CoT reasoning steps, we can preserve LLM expressivity. Building on these theoretical results, we introduce CRANE, a constrained decoding algorithm that only enforces the grammar when generating final answers and intermediate expressions, while keeping reasoning steps unconstrained. It uses delimiters (e.g., "<< >>" or "<think>...</think>") to switch dynamically between modes. CRANE boosts accuracy by up to 10 percentage points on first-order logic generation and other symbolic reasoning tasks. </p>
+              </td>
+          </tr>
+          <tr>
+            <td width="25%">
+              <div class="one">
                   <a href="images/cornstack.png" target="_blank"><img style="width:100%;max-width:100%" src='images/cornstack.png'></a>
               </div>
               
             </td>
             <td valign="top" width="75%">
-              <a href="https://gangiswag.github.io/code-embed/" target="_blank">
+              <a href="https://arxiv.org/abs/2412.01007" target="_blank">
                   <papertitle>CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking</papertitle>
               </a>
               <br>
@@ -169,7 +194,7 @@
             </td>
             <td valign="top" width="75%">
               <a href="https://arxiv.org/abs/2410.07295" target="_blank">
-                  <papertitle>IterGen: Iterative Structured LLM Generation</papertitle>
+                  <papertitle>IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking</papertitle>
               </a>
               <br>
               <a href="https://shubhamugare.github.io/" target="_blank">Shubham Ugare</a>,
@@ -182,7 +207,7 @@
               <br>
               [<a href="https://arxiv.org/abs/2410.07295" target="_blank">Paper</a>][<a href="https://arxiv.org/pdf/2410.07295" target="_blank">PDF</a>]
               <br>
-              <p>IterGen is a framework that enables users to define and enforce semantic constraints into LLM output and efficiently backtrack by grammar symbols and re-sample during LLM generation until these constraints are satisfied. IterGen improves LLM-generated SQL accuracy by 18% and eliminates LLM privacy leakage.</p>
+              <p>IterGen is a decoding algorithm which leverages grammar-based backtracking and selective rejection sampling to efficiently enforce user-defined semantic constraints into LLM output. IterGen improves LLM-generated SQL accuracy by 18% and eliminates LLM privacy leakage.</p>
               </td>
           </tr>     
           <tr>
@@ -205,7 +230,7 @@
               <br>
               [<a href="https://openreview.net/forum?id=W5U3XB1C11" target="_blank">Paper</a>][<a href="https://openreview.net/pdf/3ae0ff26b47452acd364e62b3457ac330522843a.pdf" target="_blank">PDF</a>][<a href="https://github.com/uiuc-focal-lab/RABBit" target="_blank">Code</a>]
               <br>
-              <p>We introduce a scalable Branch-and-Bound-based verifier RABBit for precisely verifying hyperproperties such as monotonicity and fairness defined over multiple executions of Deep Neural Networks. </p>
+              <p> We introduce a GPU-accelerated, Branch-and-Bound-based verifier RABBit for formally verifying hyperproperties, such as ensembles, conformal prediction, and robustness, defined over multiple executions of Deep Neural Networks. RABBit improves neural network verified accuracy by 8% over state-of-the-art verifiers within the same compute budget. </p>
               </td>
           </tr>   
           <tr>
