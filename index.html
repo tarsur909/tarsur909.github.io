@@ -218,6 +218,31 @@
                         <p>SynCode is a novel framework for the grammar-guided generation of Large Language Models (LLMs) that is scalable to general-purpose programming languages and has soundness and completeness guarantees. SynCode reduces syntax errors by 96-100% for various languages (JSON, Python, Go) and enables 1.5x-10x faster LLM inference than existing approaches. </p>
                       </td>
                     </tr>
+
+                    <tr>
+                      <td width="25%">
+                        <div class="one">
+                            <a href="images/dingo.png" target="_blank"><img style="width:100%;max-width:100%" src='images/dingo.png'></a>
+                        </div>
+                      </td>
+                      <td valign="top" width="75%">
+                        <a href="https://arxiv.org/abs/2505.23061" target="_blank">
+                            <papertitle>DINGO: Constrained Inference for Diffusion LLMs</papertitle>
+                        </a>
+                        <br>
+                        <strong>Tarun Suresh</strong>,  
+                        <a href="https://debangshu-banerjee.github.io/" target="_blank">Debangshu Banerjee</a>,
+                        <a href="https://shubhamugare.github.io/" target="_blank">Shubham Ugare</a>,
+                        <a href="https://misailo.cs.illinois.edu/" target="_blank">Sasa Misailovic</a>,
+                        <a href="https://ggndpsngh.github.io/" target="_blank">Gagandeep Singh</a>
+                        <br>
+                        <em>R2-FM @ ICML 2025</em>
+                        <br>
+                        [<a href="https://arxiv.org/abs/2505.23061" target="_blank">Paper</a>]
+                        <br>
+                        <p>We introduce DINGO, a novel constrained inference method for diffusion-based large language models that enables efficient generation while satisfying user-defined constraints. Our approach provides a principled way to incorporate constraints into the diffusion process, enabling more controllable and reliable LLM generation.</p>
+                      </td>
+                    </tr>
                   </table>
                   
                 </div>
@@ -232,11 +257,36 @@
             <td width="100%" valign="middle">
               <div class="research-section">
                 <h3 class="section-title" onclick="toggleSection('rlhf-reward')" style="cursor: pointer; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #1772d0; margin-bottom: 10px;">
-                  ▼ RLHF/Reward Modeling/Reward Hacking
+                  ▼ Reinforcement Learning, Reward Modeling, and Reward Hacking
                 </h3>
                                  <div id="rlhf-reward" class="section-content">
                    
                    <table width="100%" border="0" cellspacing="0" cellpadding="20">
+                     <tr>
+                       <td width="25%">
+                         <div class="one">
+                             <a href="images/pet.png" target="_blank"><img style="width:100%;max-width:100%" src='images/pet.png'></a>
+                         </div>
+                       </td>
+                       <td valign="top" width="75%">
+                         <a href="https://arxiv.org/abs/2505.20556" target="_blank">
+                             <papertitle>Learning a Pessimistic Reward Model in RLHF</papertitle>
+                         </a>
+                         <br>
+                         <a href="https://xuyinglun.com/" target="_blank">Yinglun Xu</a>,
+                         <a href="" target="_blank">Hangoo Kang</a>,
+                         <strong>Tarun Suresh</strong>,  
+                         <a href="" target="_blank">Yuxuan Wan</a>,
+                         <a href="https://ggndpsngh.github.io/" target="_blank">Gagandeep Singh</a>
+                         <br>
+                         <em>In Submission</em>
+                         <br>
+                         [<a href="https://arxiv.org/abs/2505.20556" target="_blank">Paper</a>]
+                         <br>
+                         <p>We propose PET, a novel pessimistic reward fine-tuning method, to learn a pessimistic reward model robust against reward hacking in offline reinforcement learning from human feedback (RLHF). Our method shows that when optimizing a policy on a pessimistic reward model fine-tuned through PET, reward hacking can be prevented without relying on any regularization, enabling agents to greedily search for high-reward policies without suffering from reward hacking.</p>
+                       </td>
+                     </tr>
+
                      <tr>
                        <td width="25%">
                          <div class="one">
@@ -283,11 +333,97 @@
             <td width="100%" valign="middle">
               <div class="research-section">
                 <h3 class="section-title" onclick="toggleSection('dl-pl-fm-se')" style="cursor: pointer; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #1772d0; margin-bottom: 10px;">
-                  ▼ Deep Learning for PL/FM/SE
+                  ▼ Language Models for Programming Synthesis, Optimization, and Verification and Software Development
                 </h3>
                                  <div id="dl-pl-fm-se" class="section-content">
                    
                    <table width="100%" border="0" cellspacing="0" cellpadding="20">
+                     <tr>
+                       <td width="25%">
+                         <div class="one">
+                             <a href="images/superopt.png" target="_blank"><img style="width:100%;max-width:100%" src='images/superopt.png'></a>
+                         </div>
+                       </td>
+                       <td valign="top" width="75%">
+                         <a href="https://arxiv.org/abs/2505.11480" target="_blank">
+                             <papertitle>Improving Assembly Code Performance with Large Language Models via Reinforcement Learning</papertitle>
+                         </a>
+                         <br>
+                         <a href="https://anjiang-wei.github.io/" target="_blank">Anjiang Wei</a>,
+                         <strong>Tarun Suresh</strong>,
+                         <a href="" target="_blank">Huanmi Tan</a>,
+                         <a href="https://xuyinglun.com/" target="_blank">Yinglun Xu</a>,
+                         <a href="https://ggndpsngh.github.io/" target="_blank">Gagandeep Singh</a>,
+                         <a href="" target="_blank">Ke Wang</a>,
+                         <a href="https://theory.stanford.edu/~aiken/" target="_blank">Alex Aiken</a>
+                         <br>
+                         <em>In Submission</em>
+                         <br>
+                         [<a href="https://arxiv.org/abs/2505.11480" target="_blank">Paper</a>]
+                         <br>
+                         <p>We present a reinforcement learning framework that trains LLMs using Proximal Policy Optimization (PPO) to optimize assembly code performance. Our model, Qwen2.5-Coder-7B-PPO, achieves 96.0% test pass rates and an average speedup of 1.47x over the gcc -O3 baseline on a benchmark of 8,072 real-world programs, demonstrating that reinforcement learning can unlock the potential of LLMs to serve as effective optimizers for assembly code performance.</p>
+                       </td>
+                     </tr>
+
+                     <tr>
+                       <td width="25%">
+                         <div class="one">
+                             <a href="images/codearc.png" target="_blank"><img style="width:100%;max-width:100%" src='images/codearc.png'></a>
+                         </div>
+                       </td>
+                       <td valign="top" width="75%">
+                         <a href="https://arxiv.org/abs/2503.23145" target="_blank">
+                             <papertitle>CodeARC: Benchmarking Reasoning Capabilities of LLM Agents for Inductive Program Synthesis</papertitle>
+                         </a>
+                         <br>
+                         <a href="https://anjiang-wei.github.io/" target="_blank">Anjiang Wei</a>,
+                         <strong>Tarun Suresh</strong>,
+                         <a href="" target="_blank">Jiannan Cao</a>,
+                         <a href="" target="_blank">Naveen Kannan</a>,
+                         <a href="" target="_blank">Yuheng Wu</a>,
+                         <a href="" target="_blank">Kai Yan</a>,
+                         <a href="" target="_blank">Thiago S. F. X. Teixeira</a>,
+                         <a href="" target="_blank">Ke Wang</a>,
+                         <a href="https://theory.stanford.edu/~aiken/" target="_blank">Alex Aiken</a>
+                         <br>
+                         <em>COLM 2025</em>
+                         <br>
+                         [<a href="https://arxiv.org/abs/2503.23145" target="_blank">Paper</a>][<a href="https://github.com/Anjiang-Wei/CodeARC" target="_blank">Code</a>]
+                         <br>
+                         <p>We propose CodeARC, the Code Abstraction and Reasoning Challenge, a new evaluation framework where agents interact with a hidden target function by querying it with new inputs, synthesizing candidate functions, and iteratively refining their solutions using a differential testing oracle. We construct the first large-scale benchmark for general-purpose inductive program synthesis, featuring 1114 functions. Among 18 models evaluated, o3-mini performs best with a success rate of 52.7%, highlighting the difficulty of this task.</p>
+                       </td>
+                     </tr>
+
+                     <tr>
+                       <td width="25%">
+                         <div class="one">
+                             <a href="images/swerank.png" target="_blank"><img style="width:100%;max-width:100%" src='images/swerank.png'></a>
+                         </div>
+                       </td>
+                       <td valign="top" width="75%">
+                         <a href="https://arxiv.org/abs/2505.07849" target="_blank">
+                             <papertitle>SweRank: Software Issue Localization with Code Ranking</papertitle>
+                         </a>
+                         <br>
+                         <a href="https://gangiswag.github.io/" target="_blank">Revanth Gangi Reddy</a>,
+                         <strong>Tarun Suresh</strong>,
+                         <a href="" target="_blank">JaeHyeok Doo</a>,
+                         <a href="" target="_blank">Ye Liu</a>,
+                         <a href="" target="_blank">Xuan Phi Nguyen</a>,
+                         <a href="" target="_blank">Yingbo Zhou</a>,
+                         <a href="" target="_blank">Semih Yavuz</a>,
+                         <a href="" target="_blank">Caiming Xiong</a>,
+                         <a href="https://blender.cs.illinois.edu/hengji.html" target="_blank">Heng Ji</a>,
+                         <a href="" target="_blank">Shafiq Joty</a>
+                         <br>
+                         <em>In Submission</em>
+                         <br>
+                         [<a href="https://arxiv.org/abs/2505.07849" target="_blank">Paper</a>][<a href="https://github.com/SalesforceAIResearch/SweRank" target="_blank">Code</a>]
+                         <br>
+                         <p>We present SweRank, a novel approach for software issue localization that leverages code ranking techniques to identify relevant code segments for bug fixing. Our method significantly improves localization accuracy by effectively ranking code files and functions based on their relevance to reported software issues.</p>
+                       </td>
+                     </tr>
+
                      <tr>
                        <td width="25%">
                          <div class="one">
