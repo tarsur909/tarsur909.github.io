@@ -102,7 +102,7 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                My research is at the intersection of deep learning, formal methods, and programming languages. I am largely interested in developing:
+                My research is at the intersection of deep learning, formal methods, and programming languages. I am largely interested in:
               </p>
               <p>
                 - Scalable formal tools and optimization techniques for trustworthy AI-based systems
@@ -156,7 +156,7 @@
                         <br>
                         [<a href="https://arxiv.org/abs/2505.23061" target="_blank">Paper</a>]
                         <br>
-                        <p>We introduce DINGO, a novel constrained inference method for diffusion-based large language models that enables efficient generation while satisfying user-defined constraints. Our approach provides a principled way to incorporate constraints into the diffusion process, enabling more controllable and reliable LLM generation.</p>
+                        <p>We introduce DINGO, a dynamic-programming based decoding strategy for diffusion-based large language models that provably samples the highest probability string under the model's distribution that strictly adheres to a user-defined regex constraint. Our approach provides a principled way to incorporate constraints into the diffusion process, enabling more controllable and reliable LLM generation.</p>
                       </td>
                     </tr>
 
@@ -181,7 +181,7 @@
                         <br>
                         [<a href="https://arxiv.org/abs/2502.09061" target="_blank">Paper</a>]
                         <br>
-                        <p>We show theoretically that constraining LLM generation to a fixed output grammar can reduce reasoning capabilities and by augmenting the grammar with additional production rules for CoT reasoning steps, we can preserve LLM expressivity. Building on these theoretical results, we introduce CRANE, a constrained decoding algorithm that only enforces the grammar when generating final answers and intermediate expressions, while keeping reasoning steps unconstrained. CRANE boosts accuracy by up to 10 percentage points on first-order logic generation and other symbolic reasoning tasks. </p>
+                        <p>We show theoretically that constraining LLM generation to a fixed output grammar can reduce reasoning capabilities and by augmenting the grammar with additional production rules for CoT reasoning steps, we can preserve LLM expressivity. Building on these theoretical results, we introduce CRANE, a constrained decoding algorithm that systematically interleaves free-form reasoning and syntactic/semantic structural enforcement as output is generated. CRANE boosts accuracy by up to 10 percentage points on first-order logic generation and other symbolic reasoning tasks. </p>
                       </td>
                     </tr>
 
@@ -206,7 +206,7 @@
                         <br>
                         [<a href="https://arxiv.org/abs/2410.07295" target="_blank">Paper</a>][<a href="https://arxiv.org/pdf/2410.07295" target="_blank">PDF</a>]
                         <br>
-                        <p>IterGen is a decoding algorithm which leverages grammar-based backtracking and selective rejection sampling to efficiently enforce user-defined semantic constraints into LLM output. IterGen improves LLM-generated SQL accuracy by 18% and eliminates LLM privacy leakage.</p>
+                        <p>IterGen is a library for programmatic control of LLM output as it is generated. The library provides operations to move LLM generation forwards and backward based on grammar symbols (not just LLM tokens) to repair output violating user-defined semantic constraints. IterGen improves LLM-generated SQL accuracy by 18% and eliminates LLM privacy leakage.</p>
                       </td>
                     </tr>
 
@@ -324,7 +324,7 @@
             <td width="100%" valign="middle">
               <div class="research-section">
                 <h3 class="section-title" onclick="toggleSection('dl-pl-fm-se')" style="cursor: pointer; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #1772d0; margin-bottom: 10px;">
-                  ▼ Deep Learning for Programming Synthesis, Optimization, and Verification and Software Development
+                  ▼ Deep Learning for Program Synthesis, Optimization, and Verification and Software Development
                 </h3>
                                  <div id="dl-pl-fm-se" class="section-content">
                    
