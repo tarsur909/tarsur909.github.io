@@ -102,13 +102,13 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                My research is at the intersection of deep learning, formal methods, and programming languages. I am largely interested in:
+                My research is at the intersection of Machine Learning (ML), Formal Methods (FM), and Programming Languages (PL). I am largely interested in:
               </p>
               <p>
-                - Scalable formal tools and learning-based methods for correct and secure AI-based programming systems
+                - Scalable formal tools and learning-based methods for correct and secure ML-driven programming systems
               </p>
               <p>
-                - Deep learning for program synthesis, optimization, verification, and repair
+                - Machine learning for program synthesis, optimization, verification, and repair
               </p>
             </td>
           </tr>
@@ -130,7 +130,7 @@
             <td width="100%" valign="middle">
               <div class="research-section">
                 <h3 class="section-title" onclick="toggleSection('constrained-generation')" style="cursor: pointer; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #1772d0; margin-bottom: 10px;">
-                  ▼ Programmatic Control of LLM Generation
+                  ▼ Scalable formal tools for correct and secure ML-driven programming systems
                 </h3>
                 <div id="constrained-generation" class="section-content">
                   
@@ -155,8 +155,6 @@
                         <em>NeurIPS 2025</em>
                         <br>
                         [<a href="https://arxiv.org/abs/2505.23061" target="_blank">Paper</a>]
-                        <br>
-                        <p>We introduce DINGO, the first dynamic-programming based decoding strategy for diffusion-based large language models that provably samples the highest probability string under the model's distribution that strictly adheres to a user-defined regex constraint. </p>
                       </td>
                     </tr>
 
@@ -180,8 +178,6 @@
                         <em>ICML 2025</em>
                         <br>
                         [<a href="https://arxiv.org/abs/2502.09061" target="_blank">Paper</a>]
-                        <br>
-                        <p>We show theoretically that constraining LLM generation to a fixed output grammar can reduce reasoning capabilities and by augmenting the grammar with additional production rules for CoT reasoning steps, we can preserve LLM expressivity. Building on these theoretical results, we introduce CRANE, a constrained decoding algorithm that systematically interleaves free-form reasoning and syntactic/semantic structural enforcement as output is generated. CRANE boosts accuracy by up to 10 percentage points on first-order logic generation and other symbolic reasoning tasks. </p>
                       </td>
                     </tr>
 
@@ -205,8 +201,6 @@
                         <em>ICLR 2025</em>
                         <br>
                         [<a href="https://arxiv.org/abs/2410.07295" target="_blank">Paper</a>][<a href="https://arxiv.org/pdf/2410.07295" target="_blank">PDF</a>]
-                        <br>
-                        <p>IterGen is a library for programmatic control of LLM output as it is generated. The library provides operations to move LLM generation forwards and backward based on grammar symbols (not just LLM tokens) to repair output violating user-defined semantic constraints. IterGen improves LLM-generated SQL accuracy by 18% and eliminates LLM privacy leakage.</p>
                       </td>
                     </tr>
 
@@ -230,8 +224,6 @@
                         <em>TMLR 2025</em>
                         <br>
                         [<a href="https://arxiv.org/abs/2403.01632" target="_blank">Paper</a>][<a href="https://arxiv.org/pdf/2403.01632" target="_blank">PDF</a>][<a href="https://github.com/uiuc-focal-lab/syncode" target="_blank">Code</a>]
-                        <br>
-                        <p>SynCode is a novel framework for the grammar-guided generation of Large Language Models (LLMs) that is scalable to general-purpose programming languages and has soundness and completeness guarantees. SynCode reduces syntax errors by 96-100% for various languages (JSON, Python, Go) and enables 1.5x-10x faster LLM inference than existing approaches. </p>
                       </td>
                     </tr>
                   </table>
@@ -275,8 +267,6 @@
                          <em>ICLR 2025</em>
                          <br>
                          [<a href="https://gangiswag.github.io/cornstack" target="_blank">Blog Post</a>][<a href="https://arxiv.org/pdf/2412.01007" target="_blank">Paper</a>][<a href="https://github.com/gangiswag/cornstack" target="_blank">Code</a>]
-                         <br>
-                         <p>We introduce CoRNStack, a large-scale, high-quality contrastive training dataset for code that spans multiple programming languages. We demonstrate that contrastive training of embedding models and LLM re-rankers using CoRNStack leads to state-of-the-art performance across a variety of code retrieval tasks. Notably, our lightweight retriever + re-ranker achieves state-of-the-art repoistory level bug localization on SWE-Bench over top automated software development frameworks.</p>
                        </td>
                      </tr>
 
@@ -305,8 +295,6 @@
                          <em>In Submission</em>
                          <br>
                          [<a href="https://arxiv.org/abs/2505.07849" target="_blank">Paper</a>][<a href="https://github.com/SalesforceAIResearch/SweRank" target="_blank">Code</a>]
-                         <br>
-                         <p>We present SweRank, a novel approach for software issue localization that leverages code ranking techniques to identify relevant code segments for bug fixing. Our method significantly improves localization accuracy by effectively ranking code files and functions based on their relevance to reported software issues.</p>
                        </td>
                      </tr>
 
@@ -334,8 +322,6 @@
                          <em>COLM 2025</em>
                          <br>
                          [<a href="https://arxiv.org/abs/2503.23145" target="_blank">Paper</a>][<a href="https://github.com/Anjiang-Wei/CodeARC" target="_blank">Code</a>]
-                         <br>
-                         <p>We propose CodeARC, the Code Abstraction and Reasoning Challenge, a new evaluation framework where agents interact with a hidden target function by querying it with new inputs, synthesizing candidate functions, and iteratively refining their solutions using a differential testing oracle. We construct the first large-scale benchmark for general-purpose inductive program synthesis, featuring 1114 functions. Among 18 models evaluated, o3-mini performs best with a success rate of 52.7%, highlighting the difficulty of this task.</p>
                        </td>
                      </tr>
 
@@ -361,8 +347,6 @@
                          <em>DL4C @ NeurIPS 2025</em>
                          <br>
                          [<a href="https://arxiv.org/abs/2505.11480" target="_blank">Paper</a>]
-                         <br>
-                         <p>We present a reinforcement learning framework that trains LLMs using Proximal Policy Optimization (PPO) to optimize assembly code performance. Our model, Qwen2.5-Coder-7B-PPO, achieves 96.0% test pass rates and an average speedup of 1.47x over the gcc -O3 baseline on a benchmark of 8,072 real-world programs, demonstrating that reinforcement learning can unlock the potential of LLMs to serve as effective optimizers for assembly code performance.</p>
                        </td>
                      </tr>
                    </table>
@@ -412,8 +396,6 @@
                          <em>TMLR 2025</em>
                          <br>
                          [<a href="https://arxiv.org/abs/2401.00330v3" target="_blank">Paper</a>][<a href="https://arxiv.org/pdf/2401.00330v3" target="_blank">PDF</a>]
-                         <br>
-                         <p> To address challenges from the risk of reward hacking and the complexity of reinforcement learning during preference-based reinforcement learning, we develop a novel two-step learning method called PRC.  The high-level idea is to limit the reinforcement learning agent to optimize over a constrained action space that excludes out-of-distribution state-actions, which are unreliable and increase the complexity of the reinforcement learning problem. </p>
                        </td>
                      </tr>
                      <tr>
@@ -436,8 +418,6 @@
                          <em>ARLET @ NeurIPS 2025</em>
                          <br>
                          [<a href="https://arxiv.org/abs/2505.20556" target="_blank">Paper</a>]
-                         <br>
-                         <p>We propose PET, a novel pessimistic reward fine-tuning method, to learn a pessimistic reward model robust against reward hacking in offline reinforcement learning from human feedback (RLHF). Our method shows that when optimizing a policy on a pessimistic reward model fine-tuned through PET, reward hacking can be prevented without relying on any regularization, enabling agents to greedily search for high-reward policies without suffering from reward hacking.</p>
                        </td>
                      </tr>
                    </table>
@@ -477,8 +457,6 @@
                          <em>NeurIPS 2024</em>
                          <br>
                          [<a href="https://openreview.net/forum?id=W5U3XB1C11" target="_blank">Paper</a>][<a href="https://openreview.net/pdf/3ae0ff26b47452acd364e62b3457ac330522843a.pdf" target="_blank">PDF</a>][<a href="https://github.com/uiuc-focal-lab/RABBit" target="_blank">Code</a>]
-                         <br>
-                         <p> We introduce a GPU-accelerated, Branch-and-Bound-based verifier RABBit for formally verifying hyperproperties, such as ensembles, conformal prediction, and robustness, defined over multiple executions of Deep Neural Networks. RABBit improves neural network verified accuracy by 8% over state-of-the-art verifiers within the same compute budget. </p>
                        </td>
                      </tr>
 
@@ -512,8 +490,6 @@
                          <em>ICLR 2025</em>
                          <br>
                          [<a href="https://arxiv.org/abs/2408.00761" target="_blank">Paper</a>][<a href="https://arxiv.org/pdf/2408.00761" target="_blank">PDF</a>]
-                         <br>
-                         <p>We develop a method, called TAR, for building tamper-resistant safeguards into open-weight LLMs such that adversaries cannot remove the safeguards even after thousands of steps of fine-tuning. In extensive evaluations and red teaming analyses, we find that our method greatly improves tamper-resistance while preserving benign capabilities.</p>
                        </td>
                      </tr>
 
@@ -537,8 +513,6 @@
                          <em>ICLR 2024</em>
                          <br>
                          [<a href="https://arxiv.org/abs/2305.19521" target="_blank">Paper</a>][<a href="https://arxiv.org/pdf/2305.19521" target="_blank">PDF</a>][<a href="https://github.com/uiuc-arc/Incremental-DNN-Verification" target="_blank">Code</a>]
-                         <br>
-                         <p>We present IRS, the first probabilistic approach for 5x faster robustness re-certification of Deep Neural Networks after model compression (pruning, quantization) or fine-tuning </p>
                        </td>
                      </tr>
 
@@ -561,8 +535,6 @@
                          <em>Tiny ICLR 2024 (Oral Presentation)</em>
                          <br>
                          [<a href="https://arxiv.org/abs/2403.17983" target="_blank">Paper</a>][<a href="https://arxiv.org/pdf/2403.17983" target="_blank">PDF</a>][<a href="https://github.com/uiuc-arc/llm-code-watermark" target="_blank">Code</a>]
-                         <br>
-                         <p>We present the first study of the robustness of existing watermarking techniques on code generated by large language models and propose a parsing-based algorithm that easily removes these watermarks via semantic preserving transformations of the code. </p>
                        </td>
                      </tr>
 
@@ -586,8 +558,6 @@
                          <em>WFML @ ICML 2023</em>
                          <br>
                          [<a href="https://misailo.web.engr.illinois.edu/papers/icml-workshop-23-incver.pdf" target="_blank">Paper</a>][<a href="https://misailo.web.engr.illinois.edu/papers/icml-workshop-23-incver.pdf" target="_blank">PDF</a>][<a href="https://github.com/uiuc-arc/Incremental-DNN-Verification" target="_blank">Code</a>]
-                         <br>
-                         <p>We propose efficient deterministic formal verifiers to speed up DNN re-verification after pruning, quantization, or fine-tuning. </p>
                        </td>
                      </tr>
                    </table>
