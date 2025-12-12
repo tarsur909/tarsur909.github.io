@@ -1,663 +1,491 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta name=viewport content="width=800">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-    
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Tarun Suresh - Computer Science at UIUC">
+  <meta name="author" content="Tarun Suresh">
+  <meta name="theme-color" content="#222222">
+
+  <title>Tarun Suresh</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  
+  <style>
+    body {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #222;
+      background-color: #fff;
+    }
+
+    .fixed-posi {
+      position: sticky;
+      top: 20px;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .profilepic {
+      width: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .menulink {
+      color: #1772d0;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .menulink:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
     a {
       color: #1772d0;
       text-decoration: none;
     }
-    
-    a:focus,
+
     a:hover {
       color: #f09228;
       text-decoration: none;
     }
-    
-    body,
-    td,
-    th,
-    tr,
-    p,
-    a {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px
-    }
-    
-    strong {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px;
-    }
-    
-    heading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 22px;
-    }
-    
-    papertitle {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px;
-      font-weight: 700
-    }
-    
-    name {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 32px;
-    }
-    
-    .one {
-      width: 160px;
-      height: 120px;
-      position: relative;
+
+    .in-text {
+      color: #1772d0;
+      text-decoration: none;
     }
 
-    
-    span.highlight {
-      background-color: #ffffd0;
+    .in-text:hover {
+      color: #f09228;
+    }
+
+    .header {
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1772d0;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    .section-title:hover {
+      color: #f09228;
+    }
+
+    .section-content {
+      display: block;
+    }
+
+    .paper {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .paper:last-child {
+      border-bottom: none;
+    }
+
+    .paper-thumbnail {
+      width: 160px;
+      height: 120px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      object-fit: contain;
+      background-color: #fafafa;
+      padding: 5px;
+      flex-shrink: 0;
+    }
+
+    .paper-content {
+      flex: 1;
+    }
+
+    .papertitle {
+      font-weight: 700;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .conf {
+      font-style: italic;
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      color: #1772d0;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .tag:hover {
+      color: #f09228;
+    }
+
+    .tagsep {
+      margin: 0 5px;
+    }
+
+    .allstuffp {
+      padding-top: 50px;
+    }
+
+    .about {
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .fixed-posi {
+        position: relative;
+        top: 0;
+      }
     }
   </style>
-  <link rel="icon" type="image/png" href="images/logo12.png">
-  <title>Tarun Suresh</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167314770-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'UA-167314770-1');
   </script>
 </head>
 
 <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="67%" valign="middle">
-              <p align="center">
-                <name>Tarun Suresh</name>
-              </p>
-              <p> I'm a fourth-year undergraduate student in the Computer Science Department at the University of Illinois, Urbana-Champaign (UIUC). I work with <a href="https://theory.stanford.edu/~aiken/" target="_blank">Prof. Alex Aiken (Stanford)</a>, <a href="https://misailo.cs.illinois.edu/" target="_blank">Prof. Sasa Misailovic (UIUC)</a>, and <a href="https://ggndpsngh.github.io/" target="_blank">Prof. Gagandeep Singh (UIUC)</a>.
-              </p>
-              
-              <p align=center>
-                <a href="mailto:tarsur909@gmail.com" target="_blank">Email</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/tarsur909/" target="_blank">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=Yxx6B5YAAAAJ&hl=en" target="_blank">Google Scholar</a> 
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Research</heading>
-              <p>
-                My research is at the intersection of Machine Learning (ML), Programming Languages (PL), Formal Methods (FM), and Systems. I am largely interested in:
-              </p>
-              <p>
-                - Scalable formal tools and learning-based methods for correct and secure ML-driven programming systems
-              </p>
-              <p>
-                - Machine learning for program synthesis, optimization, verification, and repair
-              </p>
-            </td>
-          </tr>
-          
-          
-        </table>
+  <div class="container pt-5 allstuffp">
+    <div class="row pt-5 allstuff">
+      <div class="col-md-4 pt-5">
+        <div class="fixed-posi">
+          <p class="name">Tarun Suresh</p>
+          <img src="images/profile-pixel.jpg" class="profilepic pt-3 pb-2" alt="Tarun Suresh">
+          <div class="pt-3 menur">
+            <a class="menulink" href="mailto:tarsur909@gmail.com" target="_blank">Email</a>
+          </div>
+          <div class="">
+            <a class="menulink" href="https://www.linkedin.com/in/tarsur909/" target="_blank">LinkedIn</a>
+          </div>
+          <div class="">
+            <a class="menulink" href="https://scholar.google.com/citations?user=Yxx6B5YAAAAJ&hl=en" target="_blank">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-8 pt-5 about">
+        <p>
+          I'm a fourth-year undergraduate student in the Computer Science Department at the University of Illinois, Urbana-Champaign (UIUC). I work with <a class="in-text" href="https://theory.stanford.edu/~aiken/" target="_blank">Prof. Alex Aiken (Stanford)</a>, <a class="in-text" href="https://misailo.cs.illinois.edu/" target="_blank">Prof. Sasa Misailovic (UIUC)</a>, and <a class="in-text" href="https://ggndpsngh.github.io/" target="_blank">Prof. Gagandeep Singh (UIUC)</a>.
+        </p>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Papers</heading>
-            </td>
-          </tr>
-        </table>
+        <p class="header pt-4">Research</p>
+        <p>
+          My research is at the intersection of Machine Learning (ML), Programming Languages (PL), Formal Methods (FM), and Systems. I am largely interested in:
+        </p>
+        <p>
+          - Scalable formal tools and learning-based methods for correct and secure ML-driven programming systems
+        </p>
+        <p>
+          - Machine learning for program synthesis, optimization, verification, and repair
+        </p>
+
+        <p class="header pt-4">Papers</p>
 
         <!-- Constrained Generation of LLMs -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <div class="research-section">
-                <h3 class="section-title" onclick="toggleSection('constrained-generation')" style="cursor: pointer; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #1772d0; margin-bottom: 10px;">
-                  ▼ Scalable Formal Tools for Correct and Secure ML-driven Programming Systems
-                </h3>
-                <div id="constrained-generation" class="section-content">
-                  
-                  <table width="100%" border="0" cellspacing="0" cellpadding="20">
-                    <tr>
-                      <td width="25%">
-                        <div class="one">
-                            <a href="images/dingo.png" target="_blank"><img style="width:100%;max-width:100%" src='images/dingo.png'></a>
-                        </div>
-                      </td>
-                      <td valign="top" width="75%">
-                        <papertitle>DINGO: Constrained Inference for Diffusion LLMs</papertitle>
-                        <br>
-                        <strong>Tarun Suresh*</strong>,  
-                        Debangshu Banerjee*,
-                        Shubham Ugare,
-                        Sasa Misailovic,
-                        Gagandeep Singh
-                        <br>
-                        <em>Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</em>
-                        <br>
-                        [<a href="https://openreview.net/pdf?id=KaYMGsnZ4R" target="_blank">Paper</a>]
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td width="25%">
-                        <div class="one">
-                            <a href="images/crane.png" target="_blank"><img style="width:100%;max-width:100%" src='images/crane.png'></a>
-                        </div>
-                      </td>
-                      <td valign="top" width="75%">
-                        <papertitle>CRANE: Reasoning with Constrained LLM Generation</papertitle>
-                        <br>
-                        Debangshu Banerjee*,
-                        <strong>Tarun Suresh*</strong>,  
-                        Shubham Ugare,
-                        Sasa Misailovic,
-                        Gagandeep Singh
-                        <br>
-                        <em>Proceedings of the 42nd International Conference on Machine Learning (ICML), 2025</em>
-                        <br>
-                        [<a href="https://openreview.net/pdf?id=wKs9fHYxCV" target="_blank">Paper</a>]
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td width="25%">
-                        <div class="one">
-                            <a href="images/beaver.png" target="_blank"><img style="width:100%;max-width:100%" src='images/beaver.png'></a>
-                        </div>
-                      </td>
-                      <td valign="top" width="75%">
-                        <papertitle>BEAVER: An Efficient Deterministic LLM Verifier</papertitle>
-                        <br>
-                        <strong>Tarun Suresh*</strong>,
-                        Nalin Wadhwa*,
-                        Debangshu Banerjee,
-                        Gagandeep Singh
-                        <br>
-                        <em>In Submission</em>
-                        <br>
-                        [<a href="https://www.arxiv.org/pdf/2512.05439" target="_blank">Paper</a>]
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td width="25%">
-                        <div class="one">
-                            <a href="images/itergen.png" target="_blank"><img style="width:100%;max-width:100%" src='images/itergen.png'></a>
-                        </div>
-                      </td>
-                      <td valign="top" width="75%">
-                        <papertitle>IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking</papertitle>
-                        <br>
-                        Shubham Ugare,
-                        Rohan Gumaste,
-                        <strong>Tarun Suresh</strong>,  
-                        Gagandeep Singh,            
-                        Sasa Misailovic
-                        <br>
-                        <em>Proceedings of the 13th International Conference on Learning Representations (ICLR), 2025</em>
-                        <br>
-                        [<a href="https://openreview.net/pdf?id=ac93gRzxxV" target="_blank">Paper</a>]
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td width="25%">
-                        <div class="one">
-                            <a href="images/syncode.png" target="_blank"><img style="width:100%;max-width:100%" src='images/syncode.png'></a>
-                        </div>
-                      </td>
-                      <td valign="top" width="75%">
-                        <papertitle>SynCode: LLM Generation with Grammar Augmentation</papertitle>
-                        <br>
-                        Shubham Ugare,
-                        <strong>Tarun Suresh</strong>,  
-                        Hangoo Kang,
-                        Sasa Misailovic,
-                        Gagandeep Singh
-                        <br>
-                        <em>Transactions on Machine Learning Research (TMLR), 2025</em>
-                        <br>
-                        [<a href="https://openreview.net/pdf?id=HiUZtgAPoH" target="_blank">Paper</a>][<a href="https://github.com/uiuc-focal-lab/syncode" target="_blank">Code</a>]
-                      </td>
-                    </tr>
-                  </table>
-                  
-                </div>
+        <div class="research-section">
+          <h3 class="section-title" onclick="toggleSection('constrained-generation')">
+            ▼ Scalable Formal Tools for Correct and Secure ML-driven Programming Systems
+          </h3>
+          <div id="constrained-generation" class="section-content">
+            
+            <div class="paper my-2 pl-2">
+              <img src="images/dingo.png" alt="DINGO" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">DINGO: Constrained Inference for Diffusion LLMs</span><br>
+                <strong>Tarun Suresh*</strong>, Debangshu Banerjee*, Shubham Ugare, Sasa Misailovic, Gagandeep Singh<br>
+                <span class="conf">Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=KaYMGsnZ4R" target="_blank">pdf</a>
               </div>
-            </td>
-          </tr>
-        </table>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/crane.png" alt="CRANE" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">CRANE: Reasoning with Constrained LLM Generation</span><br>
+                Debangshu Banerjee*, <strong>Tarun Suresh*</strong>, Shubham Ugare, Sasa Misailovic, Gagandeep Singh<br>
+                <span class="conf">Proceedings of the 42nd International Conference on Machine Learning (ICML), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=wKs9fHYxCV" target="_blank">pdf</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/beaver.png" alt="BEAVER" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">BEAVER: An Efficient Deterministic LLM Verifier</span><br>
+                <strong>Tarun Suresh*</strong>, Nalin Wadhwa*, Debangshu Banerjee, Gagandeep Singh<br>
+                <span class="conf">In Submission</span><br>
+                <a class="tag" href="https://www.arxiv.org/pdf/2512.05439" target="_blank">pdf</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/itergen.png" alt="IterGen" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking</span><br>
+                Shubham Ugare, Rohan Gumaste, <strong>Tarun Suresh</strong>, Gagandeep Singh, Sasa Misailovic<br>
+                <span class="conf">Proceedings of the 13th International Conference on Learning Representations (ICLR), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=ac93gRzxxV" target="_blank">pdf</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/syncode.png" alt="SynCode" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">SynCode: LLM Generation with Grammar Augmentation</span><br>
+                Shubham Ugare, <strong>Tarun Suresh</strong>, Hangoo Kang, Sasa Misailovic, Gagandeep Singh<br>
+                <span class="conf">Transactions on Machine Learning Research (TMLR), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=HiUZtgAPoH" target="_blank">pdf</a><span class="tagsep">|</span>
+                <a class="tag" href="https://github.com/uiuc-focal-lab/syncode" target="_blank">code</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
 
         <!-- Deep Learning for PL/FM/SE -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <div class="research-section">
-                <h3 class="section-title" onclick="toggleSection('dl-pl-fm-se')" style="cursor: pointer; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #1772d0; margin-bottom: 10px;">
-                  ▼ Deep Learning for Program Synthesis, Optimization, Verification, and Repair
-                </h3>
-                                 <div id="dl-pl-fm-se" class="section-content">
-                   
-                   <table width="100%" border="0" cellspacing="0" cellpadding="20">
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/cornstack.png" target="_blank"><img style="width:100%;max-width:100%" src='images/cornstack.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking</papertitle>
-                         <br>
-                         <strong>Tarun Suresh*</strong>,  
-                         Revanth Gangi Reddy*,
-                         Yifei Xu,
-                         Zach Nussbaum,
-                         Andriy Mulyar,
-                         Brandon Duderstadt,
-                         Heng Ji
-                         <br>
-                         <em>Proceedings of the 13th International Conference on Learning Representations (ICLR), 2025</em>
-                         <br>
-                         [<a href="https://openreview.net/pdf?id=iyJOUELYir" target="_blank">Paper</a>][<a href="https://gangiswag.github.io/cornstack" target="_blank">Blog Post</a>][<a href="https://github.com/gangiswag/cornstack" target="_blank">Code</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/swerank.png" target="_blank"><img style="width:100%;max-width:100%" src='images/swerank.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>SweRank: Software Issue Localization with Code Ranking</papertitle>
-                         <br>
-                         Revanth Gangi Reddy*,
-                         <strong>Tarun Suresh*</strong>,
-                         JaeHyeok Doo*,
-                         Ye Liu,
-                         Xuan Phi Nguyen,
-                         Yingbo Zhou,
-                         Semih Yavuz,
-                         Caiming Xiong,
-                         Heng Ji,
-                         Shafiq Joty
-                         <br>
-                         <em>In Submission</em>
-                         <br>
-                         [<a href="https://arxiv.org/pdf/2505.07849" target="_blank">Paper</a>][<a href="https://github.com/SalesforceAIResearch/SweRank" target="_blank">Code</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/codearc.png" target="_blank"><img style="width:100%;max-width:100%" src='images/codearc.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>CodeARC: Benchmarking Reasoning Capabilities of LLM Agents for Inductive Program Synthesis</papertitle>
-                         <br>
-                         Anjiang Wei,
-                         <strong>Tarun Suresh</strong>,
-                         Jiannan Cao,
-                         Naveen Kannan,
-                         Yuheng Wu,
-                         Kai Yan,
-                         Thiago S. F. X. Teixeira,
-                         Ke Wang,
-                         Alex Aiken
-                         <br>
-                         <em>Proceedings of the 2nd Conference on Language Modeling (COLM), 2025</em>
-                         <br>
-                         [<a href="https://openreview.net/pdf?id=Q5pVZCrrKr" target="_blank">Paper</a>][<a href="https://github.com/Anjiang-Wei/CodeARC" target="_blank">Code</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/superopt.png" target="_blank"><img style="width:100%;max-width:100%" src='images/superopt.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>SuperCoder: Assembly Program Superoptimization with Large Language Models</papertitle>
-                         <br>
-                         Anjiang Wei,
-                         <strong>Tarun Suresh</strong>,
-                         Huanmi Tan,
-                         Yinglun Xu,
-                         Gagandeep Singh,
-                         Ke Wang,
-                         Alex Aiken
-                         <br>
-                         <em>The 4th Deep Learning for Code Workshop (DL4C) at Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</em>
-                         <br>
-                         [<a href="https://arxiv.org/pdf/2505.11480" target="_blank">Paper</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/invbench.png" target="_blank"><img style="width:100%;max-width:100%" src='images/invbench.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>InvBench: Can LLMs Accelerate Program Verification with Invariant Synthesis?</papertitle>
-                         <br>
-                         Anjiang Wei,
-                         <strong>Tarun Suresh</strong>,
-                         Tianran Sun,
-                         Haoze Wu,
-                         Ke Wang,
-                         Alex Aiken
-                         <br>
-                         <em>In Submission</em>
-                         <br>
-                         [<a href="https://arxiv.org/pdf/2509.21629" target="_blank">Paper</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/tar.png" target="_blank"><img style="width:100%;max-width:100%" src='images/tar.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>SATBench: Benchmarking LLMs' Logical Reasoning via Automated Puzzle Generation from SAT Formulas</papertitle>
-                         <br>
-                         Anjiang Wei*,
-                         Yuheng Wu*,
-                         Yingjia Wan,
-                         <strong>Tarun Suresh</strong>,
-                         Huanmi Tan,
-                         Zhanke Zhou,
-                         Sanmi Koyejo,
-                         Ke Wang,
-                         Alex Aiken
-                         <br>
-                         <em>Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2025</em>
-                         <br>
-                         [<a href="https://aclanthology.org/2025.emnlp-main.1716.pdf" target="_blank">Paper</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/tar.png" target="_blank"><img style="width:100%;max-width:100%" src='images/tar.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>VeriCoder: Enhancing LLM-Based RTL Code Generation through Functional Correctness Validation</papertitle>
-                         <br>
-                         Anjiang Wei,
-                         Huanmi Tan,
-                         <strong>Tarun Suresh</strong>,
-                         Daniel Mendoza,
-                         Thiago S. F. X. Teixeira,
-                         Ke Wang,
-                         Caroline Trippel,
-                         Alex Aiken
-                         <br>
-                         <em>The 4th Deep Learning for Code Workshop (DL4C) at Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</em>
-                         <br>
-                         [<a href="https://arxiv.org/pdf/2504.15659" target="_blank">Paper</a>]
-                       </td>
-                     </tr>
-                   </table>
-                  
-                </div>
+        <div class="research-section">
+          <h3 class="section-title" onclick="toggleSection('dl-pl-fm-se')">
+            ▼ Deep Learning for Program Synthesis, Optimization, Verification, and Repair
+          </h3>
+          <div id="dl-pl-fm-se" class="section-content">
+            
+            <div class="paper my-2 pl-2">
+              <img src="images/cornstack.png" alt="CoRNStack" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking</span><br>
+                <strong>Tarun Suresh*</strong>, Revanth Gangi Reddy*, Yifei Xu, Zach Nussbaum, Andriy Mulyar, Brandon Duderstadt, Heng Ji<br>
+                <span class="conf">Proceedings of the 13th International Conference on Learning Representations (ICLR), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=iyJOUELYir" target="_blank">pdf</a><span class="tagsep">|</span>
+                <a class="tag" href="https://gangiswag.github.io/cornstack" target="_blank">blog post</a><span class="tagsep">|</span>
+                <a class="tag" href="https://github.com/gangiswag/cornstack" target="_blank">code</a>
               </div>
-            </td>
-          </tr>
-        </table>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/swerank.png" alt="SweRank" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">SweRank: Software Issue Localization with Code Ranking</span><br>
+                Revanth Gangi Reddy*, <strong>Tarun Suresh*</strong>, JaeHyeok Doo*, Ye Liu, Xuan Phi Nguyen, Yingbo Zhou, Semih Yavuz, Caiming Xiong, Heng Ji, Shafiq Joty<br>
+                <span class="conf">In Submission</span><br>
+                <a class="tag" href="https://arxiv.org/pdf/2505.07849" target="_blank">pdf</a><span class="tagsep">|</span>
+                <a class="tag" href="https://github.com/SalesforceAIResearch/SweRank" target="_blank">code</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/codearc.png" alt="CodeARC" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">CodeARC: Benchmarking Reasoning Capabilities of LLM Agents for Inductive Program Synthesis</span><br>
+                Anjiang Wei, <strong>Tarun Suresh</strong>, Jiannan Cao, Naveen Kannan, Yuheng Wu, Kai Yan, Thiago S. F. X. Teixeira, Ke Wang, Alex Aiken<br>
+                <span class="conf">Proceedings of the 2nd Conference on Language Modeling (COLM), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=Q5pVZCrrKr" target="_blank">pdf</a><span class="tagsep">|</span>
+                <a class="tag" href="https://github.com/Anjiang-Wei/CodeARC" target="_blank">code</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/superopt.png" alt="SuperCoder" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">SuperCoder: Assembly Program Superoptimization with Large Language Models</span><br>
+                Anjiang Wei, <strong>Tarun Suresh</strong>, Huanmi Tan, Yinglun Xu, Gagandeep Singh, Ke Wang, Alex Aiken<br>
+                <span class="conf">The 4th Deep Learning for Code Workshop (DL4C) at Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</span><br>
+                <a class="tag" href="https://arxiv.org/pdf/2505.11480" target="_blank">pdf</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/invbench.png" alt="InvBench" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">InvBench: Can LLMs Accelerate Program Verification with Invariant Synthesis?</span><br>
+                Anjiang Wei, <strong>Tarun Suresh</strong>, Tianran Sun, Haoze Wu, Ke Wang, Alex Aiken<br>
+                <span class="conf">In Submission</span><br>
+                <a class="tag" href="https://arxiv.org/pdf/2509.21629" target="_blank">pdf</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/tar.png" alt="SATBench" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">SATBench: Benchmarking LLMs' Logical Reasoning via Automated Puzzle Generation from SAT Formulas</span><br>
+                Anjiang Wei*, Yuheng Wu*, Yingjia Wan, <strong>Tarun Suresh</strong>, Huanmi Tan, Zhanke Zhou, Sanmi Koyejo, Ke Wang, Alex Aiken<br>
+                <span class="conf">Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2025</span><br>
+                <a class="tag" href="https://aclanthology.org/2025.emnlp-main.1716.pdf" target="_blank">pdf</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/tar.png" alt="VeriCoder" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">VeriCoder: Enhancing LLM-Based RTL Code Generation through Functional Correctness Validation</span><br>
+                Anjiang Wei, Huanmi Tan, <strong>Tarun Suresh</strong>, Daniel Mendoza, Thiago S. F. X. Teixeira, Ke Wang, Caroline Trippel, Alex Aiken<br>
+                <span class="conf">The 4th Deep Learning for Code Workshop (DL4C) at Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</span><br>
+                <a class="tag" href="https://arxiv.org/pdf/2504.15659" target="_blank">pdf</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
 
         <!-- RLHF/Reward Modeling/Reward Hacking -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <div class="research-section">
-                <h3 class="section-title" onclick="toggleSection('rlhf-reward')" style="cursor: pointer; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #1772d0; margin-bottom: 10px;">
-                  ▼ Robust and Efficient Preference-Based Reinforcement Learning
-                </h3>
-                                 <div id="rlhf-reward" class="section-content">
-                   
-                   <table width="100%" border="0" cellspacing="0" cellpadding="20">
-                                          <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/prc.png" target="_blank"><img style="width:100%;max-width:100%" src='images/prc.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>Two-Step Offline Preference-Based Reinforcement Learning with Constrained Actions</papertitle>
-                         <br>
-                         Yinglun Xu,
-                         <strong>Tarun Suresh</strong>,  
-                         Rohan Gumaste,
-                         David Zhu,
-                         Ruirui Li,
-                         Zhengyang Wang,
-                         Haoming Jiang,
-                         Xianfeng Tang,
-                         Qingyu Yin,
-                         Monica Xiao Cheng,
-                         Qi Zheng,
-                         Chao Zhang,
-                         Gagandeep Singh
-                         <br>
-                         <em>Transactions on Machine Learning Research (TMLR), 2025</em>
-                         <br>
-                         [<a href="https://openreview.net/pdf?id=LxPg5GJuY3" target="_blank">Paper</a>]
-                       </td>
-                     </tr>
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/pet.png" target="_blank"><img style="width:100%;max-width:100%" src='images/pet.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>Learning a Pessimistic Reward Model in RLHF</papertitle>
-                         <br>
-                         Yinglun Xu*,
-                         Hangoo Kang*,
-                         <strong>Tarun Suresh</strong>,  
-                         Yuxuan Wan,
-                         Gagandeep Singh
-                         <br>
-                         <em>Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) Workshop at Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</em>
-                         <br>
-                         [<a href="https://openreview.net/pdf?id=HWOAZUPA0C" target="_blank">Paper</a>]
-                       </td>
-                     </tr>
-                   </table>
-                  
-                </div>
+        <div class="research-section">
+          <h3 class="section-title" onclick="toggleSection('rlhf-reward')">
+            ▼ Robust and Efficient Preference-Based Reinforcement Learning
+          </h3>
+          <div id="rlhf-reward" class="section-content">
+            
+            <div class="paper my-2 pl-2">
+              <img src="images/prc.png" alt="Two-Step Offline PbRL" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">Two-Step Offline Preference-Based Reinforcement Learning with Constrained Actions</span><br>
+                Yinglun Xu, <strong>Tarun Suresh</strong>, Rohan Gumaste, David Zhu, Ruirui Li, Zhengyang Wang, Haoming Jiang, Xianfeng Tang, Qingyu Yin, Monica Xiao Cheng, Qi Zheng, Chao Zhang, Gagandeep Singh<br>
+                <span class="conf">Transactions on Machine Learning Research (TMLR), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=LxPg5GJuY3" target="_blank">pdf</a>
               </div>
-            </td>
-          </tr>
-        </table>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/pet.png" alt="Pessimistic Reward Model" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">Learning a Pessimistic Reward Model in RLHF</span><br>
+                Yinglun Xu*, Hangoo Kang*, <strong>Tarun Suresh</strong>, Yuxuan Wan, Gagandeep Singh<br>
+                <span class="conf">Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) Workshop at Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=HWOAZUPA0C" target="_blank">pdf</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
 
         <!-- Neural Network Robustness and Verification -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <div class="research-section">
-                <h3 class="section-title" onclick="toggleSection('nn-robustness')" style="cursor: pointer; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #1772d0; margin-bottom: 10px;">
-                  ▼ Neural Network Robustness and Verification
-                </h3>
-                                 <div id="nn-robustness" class="section-content">
-                   
-                   <table width="100%" border="0" cellspacing="0" cellpadding="20">
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/rabbit.png" target="_blank"><img style="width:100%;max-width:100%" src='images/rabbit.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>Relational Verification Leaps Forward with RABBit</papertitle>
-                         <br>
-                         <strong>Tarun Suresh*</strong>,              
-                         Debangshu Banerjee*,
-                         Gagandeep Singh
-                         <br>
-                         <em>Proceedings of the 38th Conference on Neural Information Processing Systems (NeurIPS), 2024</em>
-                         <br>
-                         [<a href="https://openreview.net/pdf?id=W5U3XB1C11" target="_blank">Paper</a>][<a href="https://github.com/uiuc-focal-lab/RABBit" target="_blank">Code</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/tar.png" target="_blank"><img style="width:100%;max-width:100%" src='images/tar.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>Tamper-Resistant Safeguards for Open-Weight LLMs</papertitle>
-                         <br>
-                         Rishub Tamirisa,
-                         Bhrugu Bharathi,
-                         Long Phan,
-                         Andy Zhou,
-                         Alice Gatti,
-                         <strong>Tarun Suresh</strong>,  
-                         Maxwell Lin,
-                         Justin Wang,
-                         Rowan Wang,
-                         Ron Arel,
-                         Andy Zou,
-                         Dawn Song,  
-                         Bo Li,  
-                         Dan Hendrycks,  
-                         Mantas Mazeika
-                         <br>
-                         <em>Proceedings of the 13th International Conference on Learning Representations (ICLR), 2025</em>
-                         <br>
-                         [<a href="https://openreview.net/pdf?id=4FIjRodbW6" target="_blank">Paper</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/irs.png" target="_blank"><img style="width:100%;max-width:100%" src='images/irs.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>Incremental Randomized Smoothing Certification</papertitle>
-                         <br>
-                         Shubham Ugare,
-                         <strong>Tarun Suresh</strong>,              
-                         Debangshu Banerjee,
-                         Sasa Misailovic,
-                         Gagandeep Singh
-                         <br>
-                         <em>Proceedings of the 12th International Conference on Learning Representations (ICLR), 2024</em>
-                         <br>
-                         [<a href="https://openreview.net/pdf?id=SdeAPV1irk" target="_blank">Paper</a>][<a href="https://github.com/uiuc-arc/Incremental-DNN-Verification" target="_blank">Code</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/lpw.png" target="_blank"><img style="width:100%;max-width:100%" src='images/lpw.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>Is Watermarking LLM Generated Code Robust?</papertitle>
-                         <br>
-                         <strong>Tarun Suresh</strong>,  
-                         Shubham Ugare,
-                         Gagandeep Singh,            
-                         Sasa Misailovic
-                         <br>
-                         <em>Tiny Papers Track at Proceedings of the 12th International Conference on Learning Representations (ICLR), 2024 (Oral Presentation)</em>
-                         <br>
-                         [<a href="https://arxiv.org/pdf/2403.17983.pdf" target="_blank">Paper</a>][<a href="https://github.com/uiuc-arc/llm-code-watermark" target="_blank">Code</a>]
-                       </td>
-                     </tr>
-
-                     <tr>
-                       <td width="25%">
-                         <div class="one">
-                             <a href="images/cdnn.png" target="_blank"><img style="width:100%;max-width:100%" src='images/cdnn.png'></a>
-                         </div>
-                       </td>
-                       <td valign="top" width="75%">
-                         <papertitle>Towards Continuous Verification of DNNs</papertitle>
-                         <br>
-                         Shubham Ugare,
-                         Debangshu Banerjee,
-                         <strong>Tarun Suresh</strong>,  
-                         Gagandeep Singh,            
-                         Sasa Misailovic
-                         <br>
-                         <em>Workshop on Formal Verification and Machine Learning (WFML) at Proceedings of the 40th International Conference on Machine Learning (ICML), 2023</em>
-                         <br>
-                         [<a href="https://shubhamugare.github.io/assets/pdf/ICML_workshop.pdf" target="_blank">Paper</a>][<a href="https://github.com/uiuc-arc/Incremental-DNN-Verification" target="_blank">Code</a>]
-                       </td>
-                     </tr>
-                   </table>
-                  
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-
-        <script>
-          function toggleSection(sectionId) {
-            const content = document.getElementById(sectionId);
-            const title = content.previousElementSibling;
+        <div class="research-section">
+          <h3 class="section-title" onclick="toggleSection('nn-robustness')">
+            ▼ Neural Network Robustness and Verification
+          </h3>
+          <div id="nn-robustness" class="section-content">
             
-            if (content.style.display === 'none') {
-              content.style.display = 'block';
-              title.innerHTML = title.innerHTML.replace('▶', '▼');
-            } else {
-              content.style.display = 'none';
-              title.innerHTML = title.innerHTML.replace('▼', '▶');
-            }
-          }
+            <div class="paper my-2 pl-2">
+              <img src="images/rabbit.png" alt="RABBit" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">Relational Verification Leaps Forward with RABBit</span><br>
+                <strong>Tarun Suresh*</strong>, Debangshu Banerjee*, Gagandeep Singh<br>
+                <span class="conf">Proceedings of the 38th Conference on Neural Information Processing Systems (NeurIPS), 2024</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=W5U3XB1C11" target="_blank">pdf</a><span class="tagsep">|</span>
+                <a class="tag" href="https://github.com/uiuc-focal-lab/RABBit" target="_blank">code</a>
+              </div>
+            </div>
 
-          // Initialize all sections as expanded
-          document.addEventListener('DOMContentLoaded', function() {
-            const sections = ['constrained-generation', 'rlhf-reward', 'dl-pl-fm-se', 'nn-robustness'];
-            sections.forEach(function(sectionId) {
-              const content = document.getElementById(sectionId);
-              if (content) {
-                content.style.display = 'block';
-              }
-            });
-          });
-                 </script>
+            <div class="paper my-2 pl-2">
+              <img src="images/tar.png" alt="Tamper-Resistant Safeguards" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">Tamper-Resistant Safeguards for Open-Weight LLMs</span><br>
+                Rishub Tamirisa, Bhrugu Bharathi, Long Phan, Andy Zhou, Alice Gatti, <strong>Tarun Suresh</strong>, Maxwell Lin, Justin Wang, Rowan Wang, Ron Arel, Andy Zou, Dawn Song, Bo Li, Dan Hendrycks, Mantas Mazeika<br>
+                <span class="conf">Proceedings of the 13th International Conference on Learning Representations (ICLR), 2025</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=4FIjRodbW6" target="_blank">pdf</a>
+              </div>
+            </div>
 
-        </td>
-    </tr>
-  </table>
+            <div class="paper my-2 pl-2">
+              <img src="images/irs.png" alt="Incremental Randomized Smoothing" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">Incremental Randomized Smoothing Certification</span><br>
+                Shubham Ugare, <strong>Tarun Suresh</strong>, Debangshu Banerjee, Sasa Misailovic, Gagandeep Singh<br>
+                <span class="conf">Proceedings of the 12th International Conference on Learning Representations (ICLR), 2024</span><br>
+                <a class="tag" href="https://openreview.net/pdf?id=SdeAPV1irk" target="_blank">pdf</a><span class="tagsep">|</span>
+                <a class="tag" href="https://github.com/uiuc-arc/Incremental-DNN-Verification" target="_blank">code</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/lpw.png" alt="LLM Code Watermarking" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">Is Watermarking LLM Generated Code Robust?</span><br>
+                <strong>Tarun Suresh</strong>, Shubham Ugare, Gagandeep Singh, Sasa Misailovic<br>
+                <span class="conf">Tiny Papers Track at Proceedings of the 12th International Conference on Learning Representations (ICLR), 2024 (Oral Presentation)</span><br>
+                <a class="tag" href="https://arxiv.org/pdf/2403.17983.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                <a class="tag" href="https://github.com/uiuc-arc/llm-code-watermark" target="_blank">code</a>
+              </div>
+            </div>
+
+            <div class="paper my-2 pl-2">
+              <img src="images/cdnn.png" alt="Continuous Verification" class="paper-thumbnail">
+              <div class="paper-content">
+                <span class="papertitle">Towards Continuous Verification of DNNs</span><br>
+                Shubham Ugare, Debangshu Banerjee, <strong>Tarun Suresh</strong>, Gagandeep Singh, Sasa Misailovic<br>
+                <span class="conf">Workshop on Formal Verification and Machine Learning (WFML) at Proceedings of the 40th International Conference on Machine Learning (ICML), 2023</span><br>
+                <a class="tag" href="https://shubhamugare.github.io/assets/pdf/ICML_workshop.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                <a class="tag" href="https://github.com/uiuc-arc/Incremental-DNN-Verification" target="_blank">code</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(sectionId) {
+      const content = document.getElementById(sectionId);
+      const title = content.previousElementSibling;
+      
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+        title.innerHTML = title.innerHTML.replace('▶', '▼');
+      } else {
+        content.style.display = 'none';
+        title.innerHTML = title.innerHTML.replace('▼', '▶');
+      }
+    }
+
+    // Initialize all sections as expanded
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = ['constrained-generation', 'rlhf-reward', 'dl-pl-fm-se', 'nn-robustness'];
+      sections.forEach(function(sectionId) {
+        const content = document.getElementById(sectionId);
+        if (content) {
+          content.style.display = 'block';
+        }
+      });
+    });
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
