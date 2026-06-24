@@ -1,306 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Tarun Suresh - Computer Science at UIUC">
-  <meta name="author" content="Tarun Suresh">
-  <meta name="theme-color" content="#222222">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Tarun Suresh, Computer Science Ph.D. student at Stanford University. Research at the intersection of machine learning and systems: agentic self-improvement and reliable, efficient LLM inference." />
+  <meta name="author" content="Tarun Suresh" />
+  <meta name="theme-color" content="#4f46e5" />
+
+  <meta property="og:title" content="Tarun Suresh" />
+  <meta property="og:description" content="Computer Science Ph.D. student at Stanford University working at the intersection of machine learning and systems." />
+  <meta property="og:type" content="website" />
 
   <title>Tarun Suresh</title>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  
-  <style>
-    body {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px;
-      color: #222;
-      background-color: #fff;
-    }
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%234f46e5'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Inter,Arial,sans-serif' font-weight='700' text-anchor='middle' fill='white'%3ETS%3C/text%3E%3C/svg%3E" />
 
-    .fixed-posi {
-      position: sticky;
-      top: 20px;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    .name {
-      font-size: 32px;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-
-    .profilepic {
-      width: 180px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    .menulink {
-      color: #1772d0;
-      text-decoration: none;
-      font-size: 15px;
-    }
-
-    .menulink:hover {
-      color: #f09228;
-      text-decoration: none;
-    }
-    
-    a {
-      color: #1772d0;
-      text-decoration: none;
-    }
-    
-    a:hover {
-      color: #f09228;
-      text-decoration: none;
-    }
-    
-    .in-text {
-      color: #1772d0;
-      text-decoration: none;
-    }
-
-    .in-text:hover {
-      color: #f09228;
-    }
-
-    .header {
-      font-size: 22px;
-      font-weight: 700;
-      margin-top: 30px;
-      margin-bottom: 15px;
-    }
-
-    .section-title {
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: bold;
-      color: #1772d0;
-      margin-bottom: 10px;
-      margin-top: 20px;
-    }
-
-    .section-title:hover {
-      color: #f09228;
-    }
-
-    .section-content {
-      display: block;
-    }
-
-    .paper {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      padding: 15px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    .paper:last-child {
-      border-bottom: none;
-    }
-
-    .paper-thumbnail {
-      width: 160px;
-      height: 120px;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      object-fit: contain;
-      background-color: #fafafa;
-      padding: 5px;
-      flex-shrink: 0;
-    }
-
-    .paper-content {
-      flex: 1;
-    }
-
-    .papertitle {
-      font-weight: 700;
-      font-size: 15px;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .conf {
-      font-style: italic;
-      display: block;
-      margin-top: 5px;
-      margin-bottom: 8px;
-    }
-
-    .tag {
-      color: #1772d0;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .tag:hover {
-      color: #f09228;
-    }
-
-    .tagsep {
-      margin: 0 5px;
-    }
-
-    .allstuffp {
-      padding-top: 50px;
-    }
-
-    .about {
-      text-align: justify;
-    }
-
-    .oral-highlight {
-      color: #d9534f;
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      .fixed-posi {
-        position: relative;
-        top: 0;
-      }
-    }
-  </style>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167314770-1"></script>
+  <!-- Set theme before first paint to avoid a flash of the wrong color scheme. -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-167314770-1');
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
   </script>
 </head>
-
 <body>
-  <div class="container pt-5 allstuffp">
-    <div class="row pt-5 allstuff">
-      <div class="col-md-4 pt-5">
-        <div class="fixed-posi">
-          <p class="name">Tarun Suresh</p>
-          <img src="images/profile-pixel.jpg" class="profilepic pt-3 pb-2" alt="Tarun Suresh">
-          <div class="pt-3 menur">
-            <a class="menulink" href="mailto:tarsur909@gmail.com" target="_blank">Email</a>
-          </div>
-          <div class="">
-            <a class="menulink" href="https://www.linkedin.com/in/tarsur909/" target="_blank">LinkedIn</a>
-          </div>
-          <div class="">
-            <a class="menulink" href="https://scholar.google.com/citations?user=Yxx6B5YAAAAJ&hl=en" target="_blank">Google Scholar</a>
-          </div>
-          <div class="">
-            <a class="menulink" href="https://github.com/tarsur909" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-8 pt-5 about">
-        <p>
-          <p>
-            I am an incoming Computer Science PhD student at Stanford University. I previously graduated summa cum laude from the <strong>University of Illinois Urbana-Champaign (UIUC)</strong> in <strong>December 2025</strong>, earning a <strong>B.S. in Computer Science and Statistics</strong>. I have had the privilege of working with
-            <a class="in-text" href="https://theory.stanford.edu/~aiken/" target="_blank">Prof. Alex Aiken (Stanford)</a>,
-            <a class="in-text" href="https://misailo.cs.illinois.edu/" target="_blank">Prof. Sasa Misailovic (UIUC)</a>, and
-            <a class="in-text" href="https://ggndpsngh.github.io/" target="_blank">Prof. Gagandeep Singh (UIUC)</a>. I am largely interested in the intersection of Machine Learning and Systems. My research has culminated in publications at NeurIPS, ICLR, and ICML, state-of-the-art models downloaded over 1 million times by the open-source community, and oral presentations at venues including ICLR and POPL, as well as at institutions (e.g., Stanford and CMU) and in industry.
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 
-          </p>
-
-
-        <p class="header pt-4"> Selected Papers</p>
-
-            <div class="paper my-2 pl-2">
-              <img src="images/dingo.png" alt="DINGO" class="paper-thumbnail">
-              <div class="paper-content">
-                <span class="papertitle">DINGO: Constrained Inference for Diffusion LLMs</span><br>
-                <strong>Tarun Suresh*</strong>, Debangshu Banerjee*, Shubham Ugare, Sasa Misailovic, Gagandeep Singh<br>
-                <span class="conf">Proceedings of the 39th Conference on Neural Information Processing Systems <strong>(NeurIPS), 2025</strong></span><br>
-                <a class="tag" href="https://openreview.net/pdf?id=KaYMGsnZ4R" target="_blank">pdf</a>
-              </div>
-                        </div>
-
-            <div class="paper my-2 pl-2">
-              <img src="images/crane.png" alt="CRANE" class="paper-thumbnail">
-              <div class="paper-content">
-                <span class="papertitle">CRANE: Reasoning with Constrained LLM Generation</span><br>
-                Debangshu Banerjee*, <strong>Tarun Suresh*</strong>, Shubham Ugare, Sasa Misailovic, Gagandeep Singh<br>
-                <span class="conf">Proceedings of the 42nd International Conference on Machine Learning <strong>(ICML), 2025</strong></span><br>
-                <a class="tag" href="https://openreview.net/pdf?id=wKs9fHYxCV" target="_blank">pdf</a>
-                        </div>
-                        </div>
-
-            <div class="paper my-2 pl-2">
-              <img src="images/beaver.png" alt="BEAVER" class="paper-thumbnail">
-              <div class="paper-content">
-                <span class="papertitle">BEAVER: An Efficient Deterministic LLM Verifier</span><br>
-                <strong>Tarun Suresh*</strong>, Nalin Wadhwa*, Debangshu Banerjee, Gagandeep Singh<br>
-                <span class="conf">VerifAI Workshop at Proceedings of the 14th International Conference on Learning Representations <strong>(ICLR), 2026 </strong><span class="oral-highlight">(Oral Presentation)</span></span><br>
-                <a class="tag" href="https://www.arxiv.org/pdf/2512.05439" target="_blank">pdf</a>
-                        </div>
-                        </div>
-
-            <div class="paper my-2 pl-2">
-              <img src="images/cornstack.png" alt="CoRNStack" class="paper-thumbnail">
-              <div class="paper-content">
-                <span class="papertitle">CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking</span><br>
-                <strong>Tarun Suresh*</strong>, Revanth Gangi Reddy*, Yifei Xu, Zach Nussbaum, Andriy Mulyar, Brandon Duderstadt, Heng Ji<br>
-                <span class="conf">Proceedings of the 13th International Conference on Learning Representations <strong>(ICLR), 2025</strong></span><br>
-                <a class="tag" href="https://openreview.net/pdf?id=iyJOUELYir" target="_blank">pdf</a><span class="tagsep">|</span>
-                <a class="tag" href="https://gangiswag.github.io/cornstack" target="_blank">blog post</a><span class="tagsep">|</span>
-                <a class="tag" href="https://github.com/gangiswag/cornstack" target="_blank">code</a>
-              </div>
-                         </div>
-
-            <div class="paper my-2 pl-2">
-              <img src="images/swerank.png" alt="SweRank" class="paper-thumbnail">
-              <div class="paper-content">
-                <span class="papertitle">SweRank: Software Issue Localization with Code Ranking</span><br>
-                Revanth Gangi Reddy*, <strong>Tarun Suresh*</strong>, JaeHyeok Doo*, Ye Liu, Xuan Phi Nguyen, Yingbo Zhou, Semih Yavuz, Caiming Xiong, Heng Ji, Shafiq Joty<br>
-                <span class="conf">Proceedings of the 14th International Conference on Learning Representations <strong>(ICLR), 2026</strong></span><br>
-                <a class="tag" href="https://arxiv.org/pdf/2505.07849" target="_blank">pdf</a><span class="tagsep">|</span>
-                <a class="tag" href="https://github.com/SalesforceAIResearch/SweRank" target="_blank">code</a>
-              </div>
-                         </div>
-
-            <div class="paper my-2 pl-2">
-              <img src="images/invbench.png" alt="InvBench" class="paper-thumbnail">
-              <div class="paper-content">
-                <span class="papertitle">Quokka: Accelerating Program Verification with LLMs via Invariant Synthesis</span><br>
-                Anjiang Wei, <strong>Tarun Suresh</strong>, Tianran Sun, Haoze Wu, Ke Wang, Alex Aiken<br>
-                <span class="conf">VerifAI Workshop at Proceedings of the 14th International Conference on Learning Representations <strong>(ICLR), 2026 </strong><span class="oral-highlight">(Oral Presentation)</span></span><br>
-                <a class="tag" href="https://arxiv.org/pdf/2509.21629" target="_blank">pdf</a>
-                         </div>
-                         </div>
-
-
-
-              <div class="paper my-2 pl-2">
-              <img src="images/lpw.png" alt="LLM Code Watermarking" class="paper-thumbnail">
-              <div class="paper-content">
-                <span class="papertitle">Is Watermarking LLM Generated Code Robust?</span><br>
-                <strong>Tarun Suresh</strong>, Shubham Ugare, Gagandeep Singh, Sasa Misailovic<br>
-                <span class="conf">Tiny Papers Track at Proceedings of the 12th International Conference on Learning Representations <strong>(ICLR), 2024</strong> <span class="oral-highlight">(Oral Presentation)</span></span><br>
-                <a class="tag" href="https://arxiv.org/pdf/2403.17983.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
-                <a class="tag" href="https://github.com/uiuc-arc/llm-code-watermark" target="_blank">code</a>
-              </div>
-                          </div>
-
-
-      </div>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1dd0afac006d4902950e8899166fafa6"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
-
 </html>
-
